@@ -2,6 +2,15 @@
 
 This MSc dissertation project evaluates whether adding lagged macroeconomic indicators improves corporate financial distress prediction across six horizons (H1–H6). It compares logistic regression, random forest and XGBoost using financial-only and hybrid feature sets. The notebook includes company-grouped validation, calibration and threshold analysis, and SHAP explanations for the H2 hybrid XGBoost model.
 
+## Data sources
+
+- **Company financial data:** Download the six horizon Parquet files from
+  [V4FinBench on Kaggle](https://www.kaggle.com/datasets/sebastiantomczak10/v4-group-corporate-bankruptcy/data)
+  and place them in `data/`.
+- **Macroeconomic data:** The notebook uses a separate CSV compiled from the
+  [World Bank's World Development Indicators](https://data.worldbank.org/).
+  Place `V4FinBench_Macroeconomic_Variables_2006_2021.csv` in `data/`.
+
 ## Run the notebook
 
 From the repository root, install the dependencies and start JupyterLab. The submission notebook used Python 3.13.9.
